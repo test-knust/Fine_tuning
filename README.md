@@ -1,4 +1,9 @@
+🧩 Installing Python Packages
+Prerequisites
 
+Python 3.13 or later is required.
+
+Recommended: create and use a virtual environment to keep dependencies isolated.
 
 # Installation
 
@@ -33,30 +38,20 @@ deactivate
 
 
 
-## Install Using pip
+## Installing python packages Using pip
 
-Install the `autogen-agentchat` package using pip:
-
-```bash
-
-pip install -U "autogen-agentchat"
-```
-
-```{note}
-Python 3.10 or later is required.
-```
-
-## Install OpenAI for Model Client
-
-To use the OpenAI and Azure OpenAI models, you need to install the following
-extensions:
+Once the environment is activated, upgrade pip and install all dependencies from requirements.txt:
 
 ```bash
-pip install "autogen-ext[openai]"
+
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
 
-If you are using Azure OpenAI with AAD authentication, you need to install the following:
+## This will install all necessary libraries for fine-tuning and running LLMs, including:
 
-```bash
-pip install "autogen-ext[azure]"
-
+PyTorch
+Transformers
+Datasets
+Accelerate
+PEFT (LoRA fine-tuning)
