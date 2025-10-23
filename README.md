@@ -66,3 +66,9 @@ Datasets
 Accelerate
 PEFT (LoRA fine-tuning)
 ```
+
+## ✅ Verify the Setup
+
+```bash
+python verify_setup.py
+```
