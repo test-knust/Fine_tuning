@@ -1,15 +1,10 @@
----
-myst:
-  html_meta:
-    "description lang=en": |
-     Fine Tuning
----
+
 
 # Installation
 
 ## Create a Virtual Environment (optional)
 
-When installing AgentChat locally, we recommend using a virtual environment for the installation. This will ensure that the dependencies for AgentChat are isolated from the rest of your system.
+We recommend using a virtual environment for the installation. This will ensure that the python dependencies for the workshop are isolated from the rest of your system.
 
 ``````{tab-set}
 
