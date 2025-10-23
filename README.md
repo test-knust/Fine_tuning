@@ -6,57 +6,32 @@
 
 We recommend using a virtual environment for the installation. This will ensure that the python dependencies for the workshop are isolated from the rest of your system.
 
-``````{tab-set}
 
-`````{tab-item} venv
 
-Create and activate:
+## Create and activate for Linux/Mac::
 
-Linux/Mac:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-Windows command-line:
+## Windows command-line:
 ```batch
 # The command may be `python3` instead of `python` depending on your setup
 python -m venv .venv
 .venv\Scripts\activate.bat
 ```
 
-To deactivate later, run:
+## To deactivate later, run:
 
 ```bash
 deactivate
 ```
 
-`````
-
-`````{tab-item} conda
-
-[Install Conda](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html) if you have not already.
-
-
-Create and activate:
-
-```bash
-conda create -n autogen python=3.12
-conda activate autogen
-```
-
-To deactivate later, run:
-
-```bash
-conda deactivate
-```
-
-
-`````
 
 
 
-``````
+
 
 ## Install Using pip
 
