@@ -50,8 +50,11 @@ pip install -r requirements.txt
 
 ## This will install all necessary libraries for fine-tuning and running LLMs, including:
 
+```bash
+
 PyTorch
 Transformers
 Datasets
 Accelerate
 PEFT (LoRA fine-tuning)
+```
