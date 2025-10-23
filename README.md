@@ -1,3 +1,11 @@
+🧩 Installing Python Packages (Using VS Code)
+Prerequisites
+
+Python 3.10 or later is required.
+
+VS Code: Download and install from https://code.visualstudio.com
+
+
 🧩 Installing Python Packages
 Prerequisites
 
