@@ -22,6 +22,25 @@
 - Note the file size (~4–5 GB).
 - Click **Download**.
 
+### Settings
+1. Settings (Creativity vs. Logic)
+Temperature (0.8): This controls the "randomness" of the model.
+
+Low (0.0 - 0.3): The model becomes deterministic, focused, and repetitive. Good for coding or math.
+
+High (0.8 - 1.0): The model takes more risks and is more "creative." Good for story writing or brainstorming.
+
+Analogy: Low temp is a strict librarian; high temp is a wildly imaginative poet.
+
+2. Sampling (How it picks words)
+When the AI predicts the next word, it has a list of thousands of possibilities. Sampling filters that list.
+
+Top K (40): The AI will strictly only consider the top 40 most likely next words and ignore the thousands of other possibilities. This prevents it from saying complete nonsense.
+
+Top P (0.95): Also called "Nucleus Sampling." It cuts off the list once the combined probability of the words reaches 95%. It’s a more dynamic version of Top K.
+
+Repeat Penalty (1.1): A slight penalty applied to words the AI has already used recently. This prevents it from getting stuck in loops (e.g., "The cat sat on the the the the...").
+
 ### Chat
 1. Click the **Chat** icon (speech bubble).
 2. Select your downloaded model from the top dropdown.
