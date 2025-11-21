@@ -23,23 +23,17 @@
 - Click **Download**.
 
 ### Settings
-1. Settings (Creativity vs. Logic)
-Temperature (0.8): This controls the "randomness" of the model.
+- Settings (Creativity vs. Logic)
+   1. Temperature (0.8): This controls the "randomness" of the model.
+   2. Low (0.0 - 0.3): The model becomes deterministic, focused, and repetitive. Good for coding or math.
+   3. High (0.8 - 1.0): The model takes more risks and is more "creative." Good for story writing or brainstorming.
+   4. Analogy: Low temp is a strict librarian; high temp is a wildly imaginative poet.
 
-Low (0.0 - 0.3): The model becomes deterministic, focused, and repetitive. Good for coding or math.
-
-High (0.8 - 1.0): The model takes more risks and is more "creative." Good for story writing or brainstorming.
-
-Analogy: Low temp is a strict librarian; high temp is a wildly imaginative poet.
-
-2. Sampling (How it picks words)
-When the AI predicts the next word, it has a list of thousands of possibilities. Sampling filters that list.
-
-Top K (40): The AI will strictly only consider the top 40 most likely next words and ignore the thousands of other possibilities. This prevents it from saying complete nonsense.
-
-Top P (0.95): Also called "Nucleus Sampling." It cuts off the list once the combined probability of the words reaches 95%. It’s a more dynamic version of Top K.
-
-Repeat Penalty (1.1): A slight penalty applied to words the AI has already used recently. This prevents it from getting stuck in loops (e.g., "The cat sat on the the the the...").
+- Sampling (How it picks words)
+   1. When the AI predicts the next word, it has a list of thousands of possibilities. Sampling filters that list.
+   2. Top K (40): The AI will strictly only consider the top 40 most likely next words and ignore the thousands of other possibilities. This prevents it from saying complete nonsense.
+   3. Top P (0.95): Also called "Nucleus Sampling." It cuts off the list once the combined probability of the words reaches 95%. It’s a more dynamic version of Top K.
+   4. Repeat Penalty (1.1): A slight penalty applied to words the AI has already used recently. This prevents it from getting stuck in loops (e.g., "The cat sat on the the the the...").
 
 ### Chat
 1. Click the **Chat** icon (speech bubble).
@@ -81,7 +75,7 @@ Repeat Penalty (1.1): A slight penalty applied to words the AI has already used 
 
 ### Build Your Custom Model
 ```bash
-ollama create grumpy-coder -f Modelfile
+ollama create knust-coe -f Modelfile
 ```
 
 ### Run It
@@ -93,27 +87,5 @@ ollama run grumpy-coder
 
 ---
 
-## Part 3: Python Integration
-**Objective:** Control LLMs via code.
 
-### Install Libraries
-```bash
-pip install ollama openai
-```
-
-### Run Scripts
-- Open **ollama_script.py** to see how to interact with Ollama programmatically.
-- Open **lmstudio_api.py** to see how to swap OpenAI's GPT‑4 for your local LM Studio model.
-
----
-
-## Part 4: Mini‑RAG (Retrieval Augmented Generation)
-**Objective:** Build a system that "reads" a document before answering.
-
-We will not use complex vector databases today. We will build a simple RAG using basic math.
-
-1. Run **tiny_rag.py**.
-2. **Challenge:** Modify `tiny_rag.py` to read from a `.txt` file on your computer instead of the hardcoded sentences.
-
----
 
